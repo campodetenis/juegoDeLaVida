@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <ncurses.h>
 //#include "gfx.h"
 
 #include "funciones.h"

@@ -1,8 +1,5 @@
-programa:funciones.o main.c gfx.c
-	gcc  main.c funciones.o gfx.c -o programa -lX11 
+programa: pruebaNcurses.c funcionesJuegoVida.o
+	gcc pruebaNcurses.c funcionesJuegoVida.o -o programa -lcurses
 
-funciones.o: funciones.c funciones.h
-	gcc -c funciones.c funciones.h
-
-graficos: graficos.c 
-	gcc -o holaMundo graficos.c `pkg-config --cflags --libs gtk4`
+funcionesJuegoVida.o: funcionesJuegoVida.c funcionesJuegoVida.h
+	gcc -c funcionesJuegoVida.c funcionesJuegoVida.h
